@@ -23,7 +23,7 @@ def main():
              continue
           else:
              print("'no' is wrong answer ;(. Correct answer was 'yes'."
-                   "Let's try again," + name + '!')
+                   "Let's try again," + " " + name + '!')
              sys.exit()
        else:
           if answer=='no':

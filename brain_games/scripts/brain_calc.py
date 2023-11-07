@@ -27,7 +27,7 @@ def main():
         answer=prompt.string('Your Answer:')
         if answer != str(sum):
             print("'"+str(answer)+"'"+"is wrong answer ;(. Correct answer was '"+str(sum)+"'.")
-            print("Let's try again,"+name+"!")
+            print("Let's try again,"+ " " + name+"!")
             sys.exit()
         print("Correct!")
         i+=1
