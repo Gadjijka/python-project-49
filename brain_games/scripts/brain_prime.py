@@ -12,7 +12,7 @@ def main():
    i=0
    while i<3:
        number=random.randint(0,100)
-       print('Question: ', number)
+       print('Question: ' + str(number))
        answer=prompt.string('Your Answer:')
        k=0
        for r in range (2, number//2+1):
@@ -34,7 +34,7 @@ def main():
              print("'yes' is wrong answer ;(. Correct answer was 'no'.")
              print("Let's try again, " + name +'!')
              sys.exit()
-   print("Congratulations,"+name+'!')
+   print("Congratulations, "+name+'!')
 
 
 if __name__ == 'main':
