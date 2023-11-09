@@ -5,6 +5,7 @@ from brain_games import cli
 
 
 def main():
+   cli.welcome_Tirion()
    print("Welcome to the Brain Games!")
    name = cli.welcome_user()
    print("What is the result of the expression?")

@@ -5,6 +5,7 @@ from brain_games import cli
 
 
 def main():
+   cli.welcome_Tirion()
    print("Welcome to the Brain Games!")
    name = cli.welcome_user()
    print("Answer 'yes' if the number is even, otherwise answer 'no'")

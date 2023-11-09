@@ -6,6 +6,7 @@ import math
 
 
 def main():
+   cli.welcome_Tirion()
    print("Welcome to the Brain Games!")
    name = cli.welcome_user()
    print("Find the greatest common divisor of given numbers.")
