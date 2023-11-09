@@ -24,7 +24,7 @@ def main():
         index=random.randint(0,9)
         temporary_number=progression[index]
         progression[index]=".."
-        s=" "
+        s=""
         for char in progression:
               s+=" "+str(char)
         print("Question:"+s)
