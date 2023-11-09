@@ -36,7 +36,7 @@ def main():
         print("Correct!")
         i+=1
 
-   print("Congratulations,"+name+'!')
+   print("Congratulations, "+name+'!')
 
 
 if __name__ == 'main':
