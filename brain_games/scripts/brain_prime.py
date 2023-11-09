@@ -24,7 +24,7 @@ def main():
              i=i+1
           else:
              print("'no' is wrong answer ;(. Correct answer was 'yes'."
-                   "Let's try again," + name +'!')
+                   "Let's try again, " + name +'!')
              sys.exit()
        if k>0:
           if answer=='no':
