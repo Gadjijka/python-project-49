@@ -36,7 +36,7 @@ def main():
              print("'yes' is wrong answer ;(. Correct answer was 'no'."
                    "Let's try again," + name +'!')
              sys.exit()
-   print("Congratulations,"+name+'!')
+   print("Congratulations, "+name+'!')
 
 
 if __name__ == 'main':
