@@ -18,22 +18,17 @@ def main():
         for r in range(2, number // 2 + 1):
             if number % r == 0:
                 k = k + 1
-        if k == 0:
-            if answer == 'yes':
-                print("Correct!")
-                i = i + 1
-            else:
-                print("'no' is wrong answer ;(. Correct answer was 'yes'."
-                      "Let's try again, " + name + '!')
-                sys.exit()
-        if k > 0:
-            if answer == 'no':
-                print("Correct!")
-                i = i + 1
-            else:
-                print("'yes' is wrong answer ;(. Correct answer was 'no'.")
-                print("Let's try again, " + name + '!')
-                sys.exit()
+        if k == 0 and answer == 'yes':
+            print("Correct!")
+            i = i + 1
+            continue
+        if k > 0 and answer == 'no':
+            print("Correct!")
+            i = i + 1
+            continue
+        print("'yes' is wrong answer ;(. Correct answer was 'no'.")
+        print("Let's try again, " + name + '!')
+        sys.exit()
     print("Congratulations, " + name + '!')
 
 
