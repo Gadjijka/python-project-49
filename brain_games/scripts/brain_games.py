@@ -3,6 +3,7 @@ from brain_games import cli
 
 
 def main():
+    print("Hello, Tirion")
     print("Welcome to the Brain Games!")
     cli.welcome_user()
 
