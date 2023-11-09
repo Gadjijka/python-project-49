@@ -17,14 +17,14 @@ def main():
         number1=random.randint(100,200)
         number2=random.randint(0,100)
         if sign==0:
-            print("Question:" +str(number1) + "+" + str(number2))
+            print("Question: " +str(number1) + " + " + str(number2))
             sum=number1+number2
         if sign==1:
             sum=number1-number2
-            print("Question:" + str(number1) + "-" + str(number2))
+            print("Question: " + str(number1) + " - " + str(number2))
         if sign==2:
             sum=number1*number2
-            print("Question:" + str(number1) + "*" + str(number2))
+            print("Question: " + str(number1) + " * " + str(number2))
         answer=prompt.string('Your Answer:')
         if answer != str(sum):
             print("'"+str(answer)+"'"+"is wrong answer ;(. Correct answer was '"+str(sum)+"'.")
@@ -33,7 +33,7 @@ def main():
         print("Correct!")
         i+=1
 
-   print("Congratulations,"+name+'!')
+   print("Congratulations, "+name+'!')
 
 
 if __name__ == 'main':
