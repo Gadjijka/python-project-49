@@ -6,10 +6,10 @@ import math
 
 
 def main():
+   print("What number is missing in the progression?")
    cli.welcome_Tirion()
    print("Welcome to the Brain Games!")
    name = cli.welcome_user()
-   print("Find the greatest common divisor of given numbers.")
    i=0
    while i<3:
         number1=random.randint(0,100)
