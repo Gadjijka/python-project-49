@@ -34,7 +34,7 @@ def main():
              continue
           else:
              print("'yes' is wrong answer ;(. Correct answer was 'no'."
-                   "Let's try again," + name +'!')
+                   "Let's try again," + " " + name +'!')
              sys.exit()
    print("Congratulations, "+name+'!')
 
