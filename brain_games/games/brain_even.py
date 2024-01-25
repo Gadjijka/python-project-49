@@ -1,45 +1,17 @@
 import random
-import sys
-import prompt
-from brain_games import cli
+
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def main():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    cli.welcome_Tirion()
-    print("Welcome to the Brain Games!")
-    name = cli.welcome_user()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    i = 0
-    while i < 3:
-        number = random.randint(0, 100)
-        print('Question:', number)
-        answer = prompt.string('Your Answer:')
-        if answer != 'no' and answer != 'yes':
-            print("Incorrect answer. Let's try again")
-            sys.exit()
-        if number % 2 == 0:
-            if answer == 'yes':
-                print('Correct!')
-                i += 1
-                continue
-            else:
-                print("'no' is wrong answer ;(."
-                      "Correct answer was 'yes'."
-                      "Let's try again," + " " + name + "!")
-                sys.exit()
-        else:
-            if answer == 'no':
-                print('Correct!')
-                i += 1
-                continue
-            else:
-                print("'yes' is wrong answer ;(."
-                      "Correct answer was 'no'."
-                      "Let's try again," + " " + name + "!")
-                sys.exit()
-    print("Congratulations, " + name + '!')
+def is_even(num):
+    """
+    Check if the given number is even.
+    """
+    return num % 2 == 0
 
 
-if __name__ == 'main':
-    main()
+def generate_round():
+    number = random.randint(1, 100)
+    question = number
+    right_answer = 'yes' if is_even(number) else 'no'
+    return question, right_answer
