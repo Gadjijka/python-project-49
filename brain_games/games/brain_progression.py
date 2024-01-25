@@ -1,43 +1,19 @@
 import random
-import sys
-import prompt
-from brain_games import cli
+
+RULES = 'What number is missing in the progression?'
 
 
-def main():
-    print("What number is missing in the progression?")
-    cli.welcome_Tirion()
-    print("Welcome to the Brain Games!")
-    name = cli.welcome_user()
-    i = 0
-    while i < 3:
-        number1 = random.randint(0, 100)
-        progression = []
-        progression.append(number1)
-        number2 = random.randint(0, 100)
-        k = 1
-        while k < 10:
-            number1 += number2
-            progression.append(number1)
-            k += 1
-        index = random.randint(0, 9)
-        temporary_number = progression[index]
-        progression[index] = ".."
-        s = ""
-        for char in progression:
-            s += " " + str(char)
-        print("Question:" + s)
-        answer = prompt.string('Your Answer:')
-        if answer != str(temporary_number):
-            print("'" + answer + "'" + "is wrong answer"
-                  " ;(. Correct answer was '" + str(temporary_number) + "'.")
-            print("Let's try again," + " " + name + "!")
-            sys.exit()
-        print("Correct!")
-        i += 1
-
-    print("Congratulations, " + name + '!')
+def make_progression():
+    length = random.randint(5, 10)
+    start = random.randint(1, 10)
+    step = random.randint(1, 10)
+    return [str(start + i * step) for i in range(length)]
 
 
-if __name__ == 'main':
-    main()
+def generate_round():
+    progression = make_progression()
+    index_to_replace = random.randint(0, len(progression) - 1)
+    correct_answer = progression[index_to_replace]
+    progression[index_to_replace] = '..'
+    question = ' '.join(progression)
+    return question, correct_answer
