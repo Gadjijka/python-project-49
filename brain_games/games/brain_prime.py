@@ -1,36 +1,22 @@
 import random
-import sys
-import prompt
-from brain_games import cli
+
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def main():
-    cli.welcome_Tirion()
-    print("Welcome to the Brain Games!")
-    name = cli.welcome_user()
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    i = 0
-    while i < 3:
-        number = random.randint(0, 100)
-        print('Question: ' + str(number))
-        answer = prompt.string('Your Answer:')
-        k = 0
-        for r in range(2, number // 2 + 1):
-            if number % r == 0:
-                k = k + 1
-        if k == 0 and answer == 'yes':
-            print("Correct!")
-            i = i + 1
-            continue
-        if k > 0 and answer == 'no':
-            print("Correct!")
-            i = i + 1
-            continue
-        print("'yes' is wrong answer ;(. Correct answer was 'no'.")
-        print("Let's try again, " + name + '!')
-        sys.exit()
-    print("Congratulations, " + name + '!')
+def is_prime(number):
+    """
+    Check if the number is prime
+    """
+    if number < 2:
+        return False
+    for i in range(2, int(number ** 0.5) + 1):
+        if number % i == 0:
+            return False
+    return True
 
 
-if __name__ == 'main':
-    main()
+def generate_round():
+    number = random.randint(1, 100)
+    question = str(number)
+    answer = 'yes' if is_prime(number) else 'no'
+    return question, answer
