@@ -23,6 +23,7 @@ def main():
             print("Question: " + str(number1) + " - " + str(number2))
         if sign == 2:
             sum = number1 * number2
+            print("Question: " + str(number1) + " * " + str(number2))
         answer = prompt.string('Your Answer:')
         if answer != str(sum):
             print("'" + str(answer) + "'" + "is wrong answer"
