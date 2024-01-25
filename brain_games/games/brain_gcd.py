@@ -1,32 +1,20 @@
 import random
-import sys
-import prompt
-from brain_games import cli
-import math
+
+RULES = 'Find the greatest common divisor of given numbers.'
 
 
-def main():
-    cli.welcome_Tirion()
-    print("Welcome to the Brain Games!")
-    name = cli.welcome_user()
-    print("Find the greatest common divisor of given numbers.")
-    i = 0
-    while i < 3:
-        number1 = random.randint(0, 100)
-        number2 = random.randint(0, 100)
-        print("Question: " + str(number1) + " " + str(number2))
-        answer = prompt.string('Your Answer:')
-        if answer != str(math.gcd(number1, number2)):
-            print("'" + answer + "'" + " is wrong answer"
-                  ";(. Correct answer"
-                  "was '" + str(math.gcd(number1, number2)) + "'.")
-            print("Let's try again," + " " + name + "!")
-            sys.exit()
-        print("Correct!")
-        i += 1
-
-    print("Congratulations, " + name + '!')
+def find_prime_factors(num1, num2):
+    """
+    Find prime factorials for the number
+    """
+    while num2:
+        num1, num2 = num2, num1 % num2
+    return num1
 
 
-if __name__ == 'main':
-    main()
+def generate_round():
+    num1 = random.randint(1, 100)
+    num2 = random.randint(1, 100)
+    question = f'{num1} {num2}'
+    answer = str(find_prime_factors(num1, num2))
+    return question, answer
