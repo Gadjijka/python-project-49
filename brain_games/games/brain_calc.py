@@ -1,40 +1,20 @@
 import random
-import sys
-import prompt
-from brain_games import cli
+
+RULES = 'What is the result of the expression?'
 
 
-def main():
-    cli.welcome_Tirion()
-    print("Welcome to the Brain Games!")
-    name = cli.welcome_user()
-    print("What is the result of the expression?")
-    i = 0
-    sum = 0
-    while i < 3:
-        sign = random.randint(0, 2)
-        number1 = random.randint(100, 200)
-        number2 = random.randint(0, 100)
-        if sign == 0:
-            print("Question: " + str(number1) + " + " + str(number2))
-            sum = number1 + number2
-        if sign == 1:
-            sum = number1 - number2
-            print("Question: " + str(number1) + " - " + str(number2))
-        if sign == 2:
-            sum = number1 * number2
-            print("Question: " + str(number1) + " * " + str(number2))
-        answer = prompt.string('Your Answer:')
-        if answer != str(sum):
-            print("'" + str(answer) + "'" + "is wrong answer"
-                  ";(.Correct answer was '" + str(sum) + "'.")
-            print("Let's try again," + " " + name + "!")
-            sys.exit()
-        print("Correct!")
-        i += 1
-
-    print("Congratulations, " + name + '!')
+def make_expression():
+    """
+    Generating expression
+    """
+    list_of_expressions = ['+', '-', '*']
+    first_number = random.randint(1, 10)
+    second_number = random.randint(1, 10)
+    operator = random.choice(list_of_expressions)
+    return f'{first_number} {operator} {second_number}'
 
 
-if __name__ == 'main':
-    main()
+def generate_round():
+    question = make_expression()
+    right_answer = str(eval(question))
+    return question, right_answer
