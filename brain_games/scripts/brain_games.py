@@ -10,3 +10,23 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+if __name__ == 'even':
+    play_game(brain_even)
+
+
+if __name__ == 'calc':
+    play_game(brain_calc)
+
+
+if __name__ == 'gcd':
+    play_game(brain_gcd)
+
+
+if __name__ == 'prime':
+    play_game(brain_prime)
+
+
+if __name__ == 'progression':
+    play_game(brain_progression)
