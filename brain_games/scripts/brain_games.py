@@ -12,21 +12,21 @@ if __name__ == '__main__':
     main()
 
 
-if __name__ == 'even':
+if __name__ == '__even__':
     play_game(brain_even)
 
 
-if __name__ == 'calc':
+if __name__ == '__calc__':
     play_game(brain_calc)
 
 
-if __name__ == 'gcd':
+if __name__ == '__gcd__':
     play_game(brain_gcd)
 
 
-if __name__ == 'prime':
+if __name__ == '__prime__':
     play_game(brain_prime)
 
 
-if __name__ == 'progression':
+if __name__ == '__progression__':
     play_game(brain_progression)
