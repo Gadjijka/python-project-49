@@ -24,4 +24,4 @@ def make_expression():
 
 def generate_round():
     question, right_answer = make_expression()
-    return question, right_answer
+    return question, str(right_answer)
