@@ -8,8 +8,8 @@ def make_expression():
     Generating expression
     """
     list_of_expressions = ['+', '-', '*']
-    first_number = random.randint(1, 10)
-    second_number = random.randint(1, 10)
+    first_number = random.randint(1, 100)
+    second_number = random.randint(1, 100)
     operator = random.choice(list_of_expressions)
     right_answer = 0
     match operator:
