@@ -3,7 +3,7 @@ import random
 RULES = 'What is the result of the expression?'
 
 
-def calculate_an_expression(first_argument, operator, second_number):
+def calculate_an_expression(first_number, operator, second_number):
     right_answer = 0
     match operator:
         case '+':
