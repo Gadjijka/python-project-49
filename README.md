@@ -6,16 +6,38 @@
 
 
 <table>
-  <thead>Requirements
-    <tr>Python = > 3.11</tr>
-  </thead>
-  <thead>Installation instructions:
+  <thead>
     <tr>
-        git clone git@github.com:Gadjijka/python-project-49.git
-        cd brain-games
-        make install
-        make build
-        make package-install
+      <th>Requirements</th>
+      <th>Installation instructions:</th>
     </tr>
   </thead>
+  <tbody>
+    <tr>
+      <th>Python = > 3.11</th>
+      <th>
+          git clone git@github.com:Gadjijka/python-project-49.git
+          cd brain-games
+          make install
+          make build
+          make package-install
+      </th>
+    </tr>
+  </tbody>
 </table>
+
+<h3>Commands to start the game:</h3>
+<div>#Parity Check:
+brain-even
+</div>
+<div>#Calculator:
+brain-calculator
+</div>
+<div>#GCD (Greatest Common Divisor):
+brain-gcd
+</div>
+<div>#Arithmetic Progression:
+brain-progression
+</div>
+<div>#Is it a Prime Number:  
+brain-prime</div>
