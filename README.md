@@ -6,10 +6,10 @@
 
 
 <table>
-  <th>Requirements
+  <thead>Requirements
     <tr>Python = > 3.11</tr>
-  </th>
-  <th>Installation instructions:
+  </thead>
+  <thead>Installation instructions:
     <tr>
         git clone git@github.com:Gadjijka/python-project-49.git
         cd brain-games
@@ -17,5 +17,5 @@
         make build
         make package-install
     </tr>
-  </th>
+  </thead>
 </table>
