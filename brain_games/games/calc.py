@@ -23,8 +23,8 @@ def make_expression():
     first_number = random.randint(1, 100)
     second_number = random.randint(1, 100)
     operator = random.choice(list_of_expressions)
-    return f'{first_number} {operator} {second_number}', 
-           calculate_an_expression(first_number, operator, second_number)
+    return (f'{first_number} {operator} {second_number}', 
+           calculate_an_expression(first_number, operator, second_number))
 
 
 def generate_round():
