@@ -16,11 +16,11 @@
     <tr>
       <th>Python = > 3.11</th>
       <th>
-          <div>git clone git@github.com:Gadjijka/python-project-49.git</div>
-          <div>cd brain-games</div>
-          <div>make install</div>
-          <div>make build</div>
-          <div>make package-install</div>
+          <p>git clone git@github.com:Gadjijka/python-project-49.git</p>
+          <p>cd brain-games</p>
+          <p>make install</p>
+          <p>make build</p>
+          <p>make package-install</p>
       </th>
     </tr>
   </tbody>
