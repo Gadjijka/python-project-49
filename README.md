@@ -45,4 +45,4 @@ brain-prime</div>
 
 
 <h2>Примеры работы программы</h2>
-<script src="https://asciinema.org/a/ghfS1OxnNsQuh0lcDPXTamWWq"></script>
+<a href="https://asciinema.org/a/ghfS1OxnNsQuh0lcDPXTamWWq" target="_blank"><img src="https://asciinema.org/a/ghfS1OxnNsQuh0lcDPXTamWWq.svg" /></a>
