@@ -46,3 +46,7 @@ brain-prime</div>
 
 <h2>Примеры работы программы</h2>
 <a href="https://asciinema.org/a/ghfS1OxnNsQuh0lcDPXTamWWq" target="_blank"><img src="https://asciinema.org/a/ghfS1OxnNsQuh0lcDPXTamWWq.svg" /></a>
+<a href="https://asciinema.org/a/ekeUSOFN2jq3XYIk5b40cvjR8" target="_blank"><img src="https://asciinema.org/a/ekeUSOFN2jq3XYIk5b40cvjR8.svg" /></a>
+<a href="https://asciinema.org/a/ZLgBtSnlHU1spEkqw0HkJ1fFQ" target="_blank"><img src="https://asciinema.org/a/ZLgBtSnlHU1spEkqw0HkJ1fFQ.svg" /></a>
+<a href="https://asciinema.org/a/uwM3B35Q6DTOLdhoevWXNKnIF" target="_blank"><img src="https://asciinema.org/a/uwM3B35Q6DTOLdhoevWXNKnIF.svg" /></a>
+<a href="https://asciinema.org/a/133y2pME1O5CLZ3oTRtu02QlL" target="_blank"><img src="https://asciinema.org/a/133y2pME1O5CLZ3oTRtu02QlL.svg" /></a>
