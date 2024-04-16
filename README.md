@@ -41,3 +41,8 @@ brain-progression
 </div>
 <div>#Is it a Prime Number:  
 brain-prime</div>
+
+
+
+<h2>Примеры работы программы</h2>
+<script src="https://asciinema.org/a/ghfS1OxnNsQuh0lcDPXTamWWq"></script>
